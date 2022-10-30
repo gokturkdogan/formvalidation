@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-
+    <formvalid/>
   </div>
 </template>
 
 <script>
+import formvalid from "./components/form-valid.vue";
 
 export default {
   name: 'App',
   components: {
-
+    formvalid
   }
 }
 </script>
@@ -19,8 +20,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+ display: flex;
+ justify-content: center;
+ padding: 60px;
   margin-top: 60px;
+  background-color: grey;
+  width: 100%;
 }
 </style>
