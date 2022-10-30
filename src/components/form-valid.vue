@@ -8,8 +8,9 @@
           <input v-model.trim="name" @input="setName($event.target.value)" />
         </div>
         <div v-if="!$v.name.required">Field is required</div>
-        <div v-if="!$v.name.minLength"></div>
+        <div v-if="!$v.name.minLength">
         Name must have at least {{ $v.name.$params.minLength.min }} letters.
+    </div>
       </div>
 
       <div class="form__group" :class="{ 'form-group--error': $v.age.$error }">
